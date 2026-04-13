@@ -1,6 +1,8 @@
 'use server'
 
 import { z } from 'zod'
+import prisma from '@/lib/prisma'
+import { uploadToCloudinary } from '@/lib/cloudinary'
 
 const schema = z.object({
   fullName: z.string().min(2, "Name is required"),
@@ -25,12 +27,42 @@ export async function submitAppointment(prevState: any, formData: FormData) {
     }
   }
 
-  // Simulate backend processing (DB insert, email sending etc)
-  await new Promise(resolve => setTimeout(resolve, 1500));
-
-  // For file uploads, data.documents would be a File object.
-  // We omit processing here for demonstration purposes.
+  let documentUrl = null;
+  const file = data.documents as File | null;
   
+  if (file && file.size > 0 && file.name && file.name !== 'undefined') {
+    try {
+      const bytes = await file.arrayBuffer();
+      const buffer = Buffer.from(bytes);
+      const base64Str = `data:${file.type};base64,${buffer.toString('base64')}`;
+      documentUrl = await uploadToCloudinary(base64Str, 'appointments');
+    } catch (e) {
+      console.error("File upload error", e)
+    }
+  }
+
+  try {
+    await prisma.appointment.create({
+      data: {
+        fullName: validatedFields.data.fullName,
+        cnic: validatedFields.data.cnic,
+        phone: validatedFields.data.whatsapp,
+        email: validatedFields.data.email || "",
+        serviceType: validatedFields.data.serviceType,
+        date: validatedFields.data.date,
+        time: "TBD", // Assuming frontend handles this or omitted
+        description: validatedFields.data.description || "",
+        documentUrl: documentUrl
+      }
+    });
+  } catch (error) {
+    console.error("DB Insert Error", error);
+    return {
+      success: false,
+      message: "Database insertion failed."
+    }
+  }
+
   return {
     success: true,
     message: "Appointment request submitted successfully. We will contact you via WhatsApp shortly to confirm the timing."
