@@ -1,4 +1,4 @@
-import { useTranslations } from 'next-intl';
+import { getTranslations } from 'next-intl/server';
 import { Link } from '@/i18n/routing';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
@@ -10,8 +10,9 @@ import {
   Briefcase, Scale, Star, Users, Calculator, FileCheck, GraduationCap, User, Check
 } from 'lucide-react';
 
-export default function Home({ params: { locale } }: { params: { locale: string } }) {
-  const t = useTranslations('Index');
+export default async function Home({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const t = await getTranslations('Index');
   const isUrdu = locale === 'ur';
 
   return (
