@@ -9,7 +9,7 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div>
-            <h3 className="text-white text-lg font-bold mb-4">Ahmed Legal</h3>
+            <h3 className="text-white text-lg font-bold mb-4">Basit Legal</h3>
             <p className="text-sm">{t('address')}</p>
           </div>
           <div>
@@ -26,7 +26,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="border-t border-slate-800 pt-8 text-center text-sm">
-          <p>&copy; {new Date().getFullYear()} Ahmed Legal. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Basit Legal. All rights reserved.</p>
         </div>
       </div>
     </footer>

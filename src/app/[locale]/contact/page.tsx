@@ -1,5 +1,5 @@
 export const metadata = {
-  title: 'Contact Us | Advocate Muhammad Ahmed',
+  title: 'Contact Us | Advocate Muhammad Basit',
   description: 'Get in touch for corporate legal consultation in Rawalpindi, Pakistan.',
 };
 
@@ -44,7 +44,7 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
                 </div>
                 <div>
                   <h3 className="font-bold text-slate-900 text-lg mb-1">Email</h3>
-                  <p className="text-slate-600">consult@ahmedlegal.pk</p>
+                  <p className="text-slate-600">consult@basitlegal.pk</p>
                 </div>
               </div>
             </div>

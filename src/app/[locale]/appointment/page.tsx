@@ -2,7 +2,7 @@ import AppointmentForm from './AppointmentForm';
 import { useTranslations } from 'next-intl';
 
 export const metadata = {
-  title: 'Book Appointment | Advocate Muhammad Ahmed',
+  title: 'Book Appointment | Advocate Muhammad Basit',
   description: 'Schedule an appointment for SECP registration, FBR tax filing, or corporate legal consultation in Rawalpindi.',
 };
 
