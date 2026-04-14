@@ -20,7 +20,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Advocate Muhammad Ahmed - Corporate Lawyer",
+  title: "Advocate Muhammad Basit - Corporate Lawyer",
   description: "Expert Corporate Lawyer in Rawalpindi specializing in SECP, FBR & Business Compliance Services.",
 };
 
@@ -43,10 +43,10 @@ export default async function LocaleLayout({
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'LegalService',
-    name: 'Advocate Muhammad Ahmed',
+    name: 'Advocate Muhammad Basit',
     image: 'https://example.com/lawyer-logo.png',
     '@id': '',
-    url: 'https://ahmedlegal.pk',
+    url: 'https://basitlegal.pk',
     telephone: '+923000000000',
     address: {
       '@type': 'PostalAddress',
