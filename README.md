@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
+  <img src="public/favicon.ico" alt="Basit Legal Logo" width="80" height="80" />
+</div>
 
-## Getting Started
+<h1 align="center">Basit Legal - Corporate Law Firm Platform</h1>
 
-First, run the development server:
+<p align="center">
+  A premium, enterprise-grade web platform and administrative dashboard tailored specifically for Corporate Legal Consultation. Built with performance, accessibility, and high conversion in mind.
+</p>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 📌 Overview
+Basit Legal is a complete lead generation and operational platform originally engineered for robust legal practice scaling. The platform features an ultra-premium bilingual front-end designed to drive corporate conversions, coupled with a highly scalable Prisma-powered backend for appointment tracking, client curation, and portfolio management.
+
+## ✨ Key Features
+- **Bilingual Interface**: Native support for English and Urdu (via `next-intl`) with complete structural Right-To-Left (RTL) layout switching depending on locale.
+- **Premium Animations**: Scroll-based intersection observers and statistical numbers counting up intelligently, powered by `framer-motion` & `react-countup`.
+- **Intelligent Appointment Booking**: Fully localized, secure multi-step form integrating cloud document uploads directly to Cloudinary with PostgreSQL persistence.
+- **Dynamic Secure Admin Dashboard**: Managed operational routes delivering full CRUD control to the Firm for Appointments, Clients, Portfolio Projects, and Services.
+
+## 🛠 Tech Stack
+- **Framework Core**: [Next.js 15](https://nextjs.org/) (App Router & Server Actions)
+- **Styling Architecture**: [Tailwind CSS](https://tailwindcss.com/) & [shadcn/ui](https://ui.shadcn.com/)
+- **Database & ORM**: [Prisma](https://www.prisma.io/) connecting directly to [Neon (Serverless PostgreSQL)](https://neon.tech/)
+- **State & Animations**: `framer-motion`, `react-countup`, `lucide-react`
+- **Internationalization (i18n)**: `next-intl`
+- **File Uploads**: [Cloudinary API](https://cloudinary.com/)
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+Make sure you have Node.js and NPM installed.
+
+### Environment Management
+Create a `.env` file in the root directory and securely populate the following access protocols:
+```env
+# Database Schema
+DATABASE_URL="postgresql://[USER]:[PASSWORD]@[ENDPOINT]/[DB_NAME]?sslmode=require"
+
+# Cloudinary Storage Configurations
+NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME="..."
+CLOUDINARY_API_KEY="..."
+CLOUDINARY_API_SECRET="..."
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Build Instructions
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Clone & Install**
+   ```bash
+   npm install
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. **Initialize Database**
+   Push the defined database schemas securely to Neon PostgreSQL:
+   ```bash
+   npx prisma generate
+   npx prisma db push
+   ```
 
-## Learn More
+3. **Start Development Application**
+   ```bash
+   npm run dev
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+Access the native local server at [http://localhost:3000](http://localhost:3000). The default root redirects logic into `/en` or `/ur` locale layers automatically.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+*Developed & Designed for Advocate Muhammad Basit.*

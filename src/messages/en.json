@@ -1,0 +1,22 @@
+{
+  "Index": {
+    "title": "Advocate Muhammad Basit - Corporate Lawyer in Rawalpindi",
+    "headline": "Expert Corporate Lawyer in Rawalpindi",
+    "subheadline": "SECP, FBR & Business Compliance Services tailored for modern businesses.",
+    "bookAppointment": "Book Appointment",
+    "viewPortfolio": "View Portfolio"
+  },
+  "Navigation": {
+    "home": "Home",
+    "portfolio": "Portfolio",
+    "services": "Services",
+    "appointment": "Appointment",
+    "about": "About",
+    "clients": "Clients",
+    "contact": "Contact"
+  },
+  "Footer": {
+    "address": "Rawalpindi, Pakistan",
+    "disclaimer": "This website offers legal facilitation and representation. Official filings are done through SECP eZfile and FBR IRIS portals."
+  }
+}
