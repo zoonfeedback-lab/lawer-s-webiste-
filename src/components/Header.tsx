@@ -2,10 +2,21 @@ import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/routing';
 import LanguageSwitcher from './LanguageSwitcher';
 import { Button } from './ui/button';
+import MobileMenu from './MobileMenu';
 
 export default function Header({ locale }: { locale: string }) {
   const t = useTranslations('Navigation');
   const isUrdu = locale === 'ur';
+
+  const navTranslations = {
+    home: t('home'),
+    services: t('services'),
+    portfolio: t('portfolio'),
+    about: t('about'),
+    clients: t('clients'),
+    contact: t('contact'),
+    appointment: t('appointment')
+  };
 
   return (
     <header className={`border-b bg-white/80 backdrop-blur-md sticky top-0 z-50 ${isUrdu ? 'rtl' : 'ltr'}`} dir={isUrdu ? 'rtl' : 'ltr'}>
@@ -28,6 +39,7 @@ export default function Header({ locale }: { locale: string }) {
           <Button asChild className="hidden sm:inline-flex bg-blue-900 hover:bg-blue-800">
             <Link href="/appointment">{t('appointment')}</Link>
           </Button>
+          <MobileMenu isUrdu={isUrdu} translations={navTranslations} />
         </div>
       </div>
     </header>
