@@ -1,9 +1,10 @@
 'use client';
 
 import { Link } from '@/i18n/routing';
-import { usePathname } from 'next/navigation';
-import { LayoutDashboard, Calendar, Briefcase, Users, FileText, Settings, Menu, X } from 'lucide-react';
+import { usePathname, useRouter } from 'next/navigation';
+import { LayoutDashboard, Calendar, Briefcase, Users, FileText, Settings, Menu, X, LogOut } from 'lucide-react';
 import { useState } from 'react';
+import { logoutAdmin } from '@/actions/auth';
 
 export function AdminSidebar({ isUrdu, locale }: { isUrdu: boolean, locale: string }) {
   const pathname = usePathname();
@@ -15,6 +16,7 @@ export function AdminSidebar({ isUrdu, locale }: { isUrdu: boolean, locale: stri
     { icon: Briefcase, label: isUrdu ? 'پورٹ فولیو' : 'Portfolio', href: '/admin/portfolio' },
     { icon: Users, label: isUrdu ? 'کلائنٹس' : 'Clients', href: '/admin/clients' },
     { icon: FileText, label: isUrdu ? 'سروسز' : 'Services', href: '/admin/services' },
+    { icon: FileText, label: isUrdu ? 'پیغامات' : 'Messages', href: '/admin/contacts' },
   ];
 
   return (
@@ -46,11 +48,18 @@ export function AdminSidebar({ isUrdu, locale }: { isUrdu: boolean, locale: stri
               </Link>
             );
           })}
-          <div className="pt-8 mt-8 border-t border-slate-800">
+          <div className="pt-8 mt-8 border-t border-slate-800 space-y-1">
             <Link href="/" className="flex items-center gap-3 px-4 py-3 text-slate-400 hover:text-white transition-colors">
               <Settings className="w-5 h-5" />
               <span>{isUrdu ? 'ویب سائٹ پر جائیں' : 'Back to Website'}</span>
             </Link>
+            <button
+              onClick={async () => { await logoutAdmin(); window.location.reload(); }}
+              className="flex items-center gap-3 px-4 py-3 text-red-400 hover:text-red-300 transition-colors w-full"
+            >
+              <LogOut className="w-5 h-5" />
+              <span>{isUrdu ? 'لاگ آؤٹ' : 'Logout'}</span>
+            </button>
           </div>
         </nav>
       </div>

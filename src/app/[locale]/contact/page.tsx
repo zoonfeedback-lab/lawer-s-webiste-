@@ -1,3 +1,5 @@
+import ContactForm from './ContactForm';
+
 export const metadata = {
   title: 'Contact Us | Advocate Muhammad Basit',
   description: 'Get in touch for corporate legal consultation in Rawalpindi, Pakistan.',
@@ -52,23 +54,7 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
 
           <div className="bg-white rounded-3xl p-8 shadow-sm border">
             <h2 className="text-2xl font-bold text-slate-900 mb-6">Send us a message</h2>
-            <form className="space-y-4">
-              <div>
-                <label className="block text-sm font-medium text-slate-700 mb-1">Name</label>
-                <input type="text" className="w-full border rounded-lg p-3 outline-none focus:ring-2 focus:ring-blue-900" placeholder="Your Name" />
-              </div>
-              <div>
-                <label className="block text-sm font-medium text-slate-700 mb-1">Email or Phone</label>
-                <input type="text" className="w-full border rounded-lg p-3 outline-none focus:ring-2 focus:ring-blue-900" placeholder="Contact Info" />
-              </div>
-              <div>
-                <label className="block text-sm font-medium text-slate-700 mb-1">Message</label>
-                <textarea className="w-full border rounded-lg p-3 outline-none focus:ring-2 focus:ring-blue-900 min-h-[120px]" placeholder="How can we help you?"></textarea>
-              </div>
-              <button className="w-full bg-blue-900 hover:bg-blue-800 text-white font-medium py-3 rounded-lg transition-colors">
-                Send Message
-              </button>
-            </form>
+            <ContactForm />
           </div>
 
         </div>
