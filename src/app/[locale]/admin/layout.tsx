@@ -1,4 +1,6 @@
 import { AdminSidebar } from '@/components/admin/AdminSidebar';
+import { isAdminAuthenticated } from '@/actions/auth';
+import AdminLoginForm from '@/components/admin/AdminLoginForm';
 
 export default async function AdminLayout({
   children,
@@ -7,6 +9,12 @@ export default async function AdminLayout({
   children: React.ReactNode;
   params: Promise<{ locale: string }>;
 }) {
+  const isAuth = await isAdminAuthenticated();
+
+  if (!isAuth) {
+    return <AdminLoginForm />;
+  }
+
   const { locale } = await params;
   const isUrdu = locale === 'ur';
 
@@ -21,3 +29,4 @@ export default async function AdminLayout({
     </div>
   );
 }
+
