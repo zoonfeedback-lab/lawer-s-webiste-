@@ -8,6 +8,7 @@ import "../globals.css";
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
+import ClientVisibilityWrapper from '@/components/ClientVisibilityWrapper';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -88,12 +89,16 @@ export default async function LocaleLayout({
       </head>
       <body className="min-h-full flex flex-col font-sans">
         <NextIntlClientProvider messages={messages}>
-          <Header locale={locale} />
+          <ClientVisibilityWrapper>
+            <Header locale={locale} />
+          </ClientVisibilityWrapper>
           <main className="flex-1">
             {children}
           </main>
-          <Footer />
-          <WhatsAppButton />
+          <ClientVisibilityWrapper>
+            <Footer />
+            <WhatsAppButton />
+          </ClientVisibilityWrapper>
         </NextIntlClientProvider>
       </body>
     </html>

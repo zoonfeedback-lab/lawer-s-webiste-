@@ -54,3 +54,12 @@ model Service {
   documents    String[]
   process      String[]
 }
+
+model ContactMessage {
+  id           String   @id @default(cuid())
+  name         String
+  contactInfo  String
+  message      String
+  status       String   @default("Unread")
+  createdAt    DateTime @default(now())
+}

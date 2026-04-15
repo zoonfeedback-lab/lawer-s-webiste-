@@ -76,7 +76,7 @@ export default function AppointmentForm({ isUrdu }: { isUrdu: boolean }) {
         <div className="relative">
           <select 
             name="serviceType"
-            className="flex h-12 w-full appearance-none rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-900 transition-shadow disabled:opacity-50"
+            className="flex h-12 w-full appearance-none rounded-lg border border-slate-200 bg-white text-slate-900 px-4 py-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-900 transition-shadow disabled:opacity-50"
             required
             defaultValue=""
           >
