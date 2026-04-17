@@ -443,12 +443,18 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
               </div>
             </div>
             
-            {/* Map Placeholder */}
-            <div className="bg-slate-100 rounded-3xl h-full min-h-[500px] w-full flex flex-col items-center justify-center border-2 border-slate-200 text-slate-400 p-8 text-center relative overflow-hidden group hover:border-blue-300 transition-colors">
-               <div className="absolute inset-0 bg-[url('/pattern.svg')] opacity-5"></div>
-               <MapPin className="w-20 h-20 opacity-20 mb-6 group-hover:scale-110 group-hover:text-blue-500 transition-all duration-500" />
-               <h3 className="text-xl font-bold text-slate-500 mb-2 z-10">Interactive Map</h3>
-               <p className="max-w-xs z-10">1st Floor, Office # 108, Iqbal Shopping Complex, Abbottabad</p>
+            {/* Map */}
+            <div className="bg-slate-100 rounded-3xl h-full min-h-[500px] w-full overflow-hidden border-2 border-slate-200 shadow-sm relative">
+               <iframe
+                 src="https://maps.google.com/maps?q=Iqbal%20Shopping%20Complex,%20Abbottabad&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                 width="100%"
+                 height="100%"
+                 className="absolute inset-0 w-full h-full"
+                 style={{ border: 0 }}
+                 allowFullScreen
+                 loading="lazy"
+                 referrerPolicy="no-referrer-when-downgrade"
+               />
             </div>
           </div>
         </AnimatedSection>
