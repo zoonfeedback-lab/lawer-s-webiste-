@@ -5,7 +5,7 @@ import { AnimatedCounter } from '@/components/AnimatedCounter';
 import { ChevronRight, Home, ArrowRight, Clock, FileText, CheckCircle2, Scale, Check, Phone } from 'lucide-react';
 
 export const metadata = {
-  title: 'Our Services | Advocate Muhammad Basit',
+  title: 'Our Services | Abdul Basit & Co',
   description: 'Detailed breakdown of our corporate legal services including SECP incorporation, FBR tax filings, EOBI compliance, and banking facilitation.',
 };
 
@@ -172,7 +172,7 @@ export default async function ServicesPage({ params }: { params: Promise<{ local
           <div className="text-center max-w-3xl mx-auto mb-20">
             <h2 className="text-4xl font-bold mb-6">Why Choose Us</h2>
             <p className="text-xl text-blue-200 md:leading-relaxed font-light">
-              We provide unmatched dedication to your corporate success. Here is why businesses trust Basit Legal.
+              We provide unmatched dedication to your corporate success. Here is why businesses trust Abdul Basit & Co.
             </p>
           </div>
 

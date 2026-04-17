@@ -5,7 +5,7 @@ import { Link } from '@/i18n/routing';
 import { ArrowRight, Star, User, Building2, Briefcase, Landmark, CheckCircle2, Factory, Monitor, Truck, Home as RealEstate, ShoppingCart, Globe, Rocket } from 'lucide-react';
 
 export const metadata = {
-  title: 'Our Clients | Advocate Muhammad Basit',
+  title: 'Our Clients | Abdul Basit & Co',
   description: 'Trusted by hundreds of businesses across Pakistan for legal compliance and registration.',
 };
 

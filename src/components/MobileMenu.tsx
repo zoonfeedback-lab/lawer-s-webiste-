@@ -56,7 +56,7 @@ export default function MobileMenu({ isUrdu, translations: t }: MobileMenuProps)
         >
           <div className="sticky top-0 z-10 border-b border-slate-200 bg-white/95 px-6 py-4 backdrop-blur">
             <div className="flex items-center justify-between">
-              <span className="font-bold text-2xl text-blue-900 tracking-tight">Basit Legal</span>
+              <span className="font-bold text-2xl text-blue-900 tracking-tight">Abdul Basit & Co</span>
               <button
                 type="button"
                 onClick={() => setIsOpen(false)}

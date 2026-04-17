@@ -21,8 +21,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Advocate Muhammad Basit - Corporate Lawyer",
-  description: "Expert Corporate Lawyer in Rawalpindi specializing in SECP, FBR & Business Compliance Services.",
+  title: "Abdul Basit & Co - Certified Financial & Management Advisors",
+  description: "Certified Financial & Management Advisors in Abbottabad specializing in Auditing, Tax, SECP & Corporate Legal Advisory.",
 };
 
 export default async function LocaleLayout({
@@ -44,23 +44,23 @@ export default async function LocaleLayout({
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'LegalService',
-    name: 'Advocate Muhammad Basit',
+    name: 'Abdul Basit & Co',
     image: 'https://example.com/lawyer-logo.png',
     '@id': '',
     url: 'https://basitlegal.pk',
-    telephone: '+923000000000',
+    telephone: '+923115111444',
     address: {
       '@type': 'PostalAddress',
-      streetAddress: '123 Legal Complex, Murree Road',
-      addressLocality: 'Rawalpindi',
-      addressRegion: 'Punjab',
-      postalCode: '46000',
+      streetAddress: '1st Floor, Office # 108, Iqbal Shopping Complex',
+      addressLocality: 'Abbottabad',
+      addressRegion: 'KPK',
+      postalCode: '22010',
       addressCountry: 'PK'
     },
     geo: {
       '@type': 'GeoCoordinates',
-      latitude: 33.6007,
-      longitude: 73.0679
+      latitude: 34.1688,
+      longitude: 73.2215
     },
     openingHoursSpecification: {
       '@type': 'OpeningHoursSpecification',

@@ -48,7 +48,7 @@ export default function AppointmentForm({ isUrdu }: { isUrdu: boolean }) {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="space-y-2">
           <label className="text-sm font-medium text-slate-700">{isUrdu ? 'پورا نام' : 'Full Name'} *</label>
-          <Input name="fullName" placeholder="Advocate Muhammad Basit" required />
+          <Input name="fullName" placeholder="John Doe" required />
           {state?.errors?.fullName && <p className="text-red-500 text-xs">{state.errors.fullName[0]}</p>}
         </div>
         
