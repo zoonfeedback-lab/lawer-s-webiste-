@@ -1,8 +1,8 @@
 import ContactForm from './ContactForm';
 
 export const metadata = {
-  title: 'Contact Us | Advocate Muhammad Basit',
-  description: 'Get in touch for corporate legal consultation in Rawalpindi, Pakistan.',
+  title: 'Contact Us | Abdul Basit & Co',
+  description: 'Get in touch for corporate legal, financial and tax consultation in Abbottabad, Pakistan.',
 };
 
 export default async function ContactPage({ params }: { params: Promise<{ locale: string }> }) {
@@ -15,8 +15,8 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
           
           <div>
-            <h1 className="text-4xl font-bold text-slate-900 mb-6">Let's Discuss Your Business Needs</h1>
-            <p className="text-lg text-slate-600 mb-10">We operate from Rawalpindi and serve businesses all over Pakistan through our digital facilitation centers.</p>
+            <h1 className="text-4xl font-bold text-slate-900 mb-6">Let&apos;s Discuss Your Business Needs</h1>
+            <p className="text-lg text-slate-600 mb-10">We operate from Abbottabad and serve businesses all over Pakistan through our digital facilitation centers.</p>
             
             <div className="space-y-8">
               <div className="flex gap-4 items-start">
@@ -25,7 +25,7 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
                 </div>
                 <div>
                   <h3 className="font-bold text-slate-900 text-lg mb-1">Office Address</h3>
-                  <p className="text-slate-600">Office # 123, Legal Complex,<br/>Murree Road, Rawalpindi, Pakistan</p>
+                  <p className="text-slate-600">1st Floor, Office # 108,<br/>Iqbal Shopping Complex,<br/>Abbottabad, Pakistan</p>
                 </div>
               </div>
 
@@ -35,8 +35,8 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
                 </div>
                 <div>
                   <h3 className="font-bold text-slate-900 text-lg mb-1">Phone & WhatsApp</h3>
-                  <p className="text-slate-600">+92 300 000 0000</p>
-                  <p className="text-slate-600">+92 51 000 0000</p>
+                  <p className="text-slate-600">0311-5111444</p>
+                  <p className="text-slate-600">0315-5056133</p>
                 </div>
               </div>
 
@@ -46,7 +46,7 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
                 </div>
                 <div>
                   <h3 className="font-bold text-slate-900 text-lg mb-1">Email</h3>
-                  <p className="text-slate-600">consult@basitlegal.pk</p>
+                  <p className="text-slate-600">basit2k9@gmail.com</p>
                 </div>
               </div>
             </div>

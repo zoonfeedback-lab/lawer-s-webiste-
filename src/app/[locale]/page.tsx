@@ -27,7 +27,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
             {t('title')}
           </Badge>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-8 max-w-5xl leading-[1.1] font-sans">
-            {isUrdu ? 'راولپنڈی میں سرکردہ کارپوریٹ اور ٹیکس وکیل' : 'Premium Corporate & Tax Legal Services'}
+            {isUrdu ? 'ایبٹ آباد میں سرکردہ مالیاتی اور کارپوریٹ مشیر' : 'Abdul Basit & Co — Certified Financial & Management Advisors'}
           </h1>
           <p className="text-lg md:text-xl text-blue-100/80 max-w-2xl mb-12 leading-relaxed font-sans font-light">
             {t('subheadline')} {isUrdu ? '' : 'We help businesses focus on growth while we handle their legal, corporate, and tax compliance efficiently.'}
@@ -111,7 +111,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
             <div className="flex-1 mt-12 lg:mt-0">
               <div className="inline-flex items-center gap-2 px-3 py-1 bg-blue-50 text-blue-700 rounded-lg text-sm font-semibold mb-6">
                 <ShieldCheck className="w-4 h-4" />
-                {isUrdu ? 'ہمارے بارے میں' : 'About Basit Legal'}
+                {isUrdu ? 'ہمارے بارے میں' : 'About Abdul Basit & Co'}
               </div>
               <h2 className="text-4xl lg:text-5xl font-bold text-[#0B1527] mb-6 leading-tight">
                 {isUrdu ? 'آپ کا قابل اعتماد قانونی شراکت دار' : 'Your Trusted Partner for Corporate Law.'}
@@ -188,7 +188,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
         <AnimatedSection className="container mx-auto px-4" direction="up">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              {isUrdu ? 'ہمیں کیوں منتخب کریں' : 'Why Choose Basit Legal'}
+              {isUrdu ? 'ہمیں کیوں منتخب کریں' : 'Why Choose Abdul Basit & Co'}
             </h2>
             <p className="text-lg text-blue-200/80">
               {isUrdu ? 'بہترین قانونی رہنمائی اور کلائنٹ کی مکمل اطمینان۔' : 'We stand out by delivering rapid, transparent, and expert-driven results.'}
@@ -282,8 +282,8 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               { quote: "Very professional and incredibly fast SECP registration. They handled everything perfectly with zero hassle for my team.", author: "Ali Raza", comp: "Tech Solutions Pvt Ltd" },
-              { quote: "Highly recommended for tax filing. I was struggling with FBR notices until Basit Legal took over and resolved the issue.", author: "Sana Mahmood", comp: "E-Commerce Founder" },
-              { quote: "The best corporate lawyer in Rawalpindi. Transparent pricing and exceptional 24/7 support throughout our incorporation phase.", author: "Usman Khan", comp: "Real Estate Developer" }
+              { quote: "Highly recommended for tax filing. I was struggling with FBR notices until Abdul Basit & Co took over and resolved the issue.", author: "Sana Mahmood", comp: "E-Commerce Founder" },
+              { quote: "The best corporate advisory in Abbottabad. Transparent pricing and exceptional 24/7 support throughout our incorporation phase.", author: "Usman Khan", comp: "Real Estate Developer" }
             ].map((t, i) => (
               <div key={i} className="bg-white/5 border border-white/10 p-8 rounded-3xl relative hover:bg-white/10 transition-colors cursor-default">
                  <div className="flex text-yellow-400 mb-6">
@@ -388,7 +388,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
               </Link>
             </Button>
             <Button asChild size="lg" className="bg-[#25D366] hover:bg-[#20BE5A] text-white text-lg md:text-xl h-16 px-10 rounded-full shadow-xl shadow-[#25D366]/20 transition-all hover:scale-105">
-              <a href="https://wa.me/923000000000" target="_blank" rel="noreferrer">
+              <a href="https://wa.me/923115111444" target="_blank" rel="noreferrer">
                 <MessageSquare className="w-6 h-6 mr-3" />
                 Chat on WhatsApp
               </a>
@@ -407,7 +407,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
                 {isUrdu ? 'رابطہ کریں' : 'Contact Us'}
               </div>
               <h2 className="text-4xl md:text-5xl font-bold text-[#0B1527] mb-6">{isUrdu ? 'ہم سے رابطہ کریں' : 'Get In Touch'}</h2>
-              <p className="text-lg text-slate-600 mb-10 leading-relaxed">We are conveniently located in Rawalpindi. Reach out to schedule a visit or discuss your case online with our experts.</p>
+              <p className="text-lg text-slate-600 mb-10 leading-relaxed">We are conveniently located in Abbottabad. Reach out to schedule a visit or discuss your case online with our experts.</p>
               
               <div className="space-y-8">
                 <div className="flex gap-6 items-start">
@@ -416,7 +416,8 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
                   </div>
                   <div>
                     <h4 className="text-xl font-bold text-[#0B1527] mb-2">Phone & WhatsApp</h4>
-                    <p className="text-slate-600 text-lg">+92 300 1234567</p>
+                    <p className="text-slate-600 text-lg">0311-5111444</p>
+                    <p className="text-slate-600 text-lg">0315-5056133</p>
                   </div>
                 </div>
                 
@@ -426,7 +427,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
                   </div>
                   <div>
                     <h4 className="text-xl font-bold text-[#0B1527] mb-2">Email Address</h4>
-                    <p className="text-slate-600 text-lg">info@basitlegal.com</p>
+                    <p className="text-slate-600 text-lg">basit2k9@gmail.com</p>
                   </div>
                 </div>
                 
@@ -436,7 +437,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
                   </div>
                   <div>
                     <h4 className="text-xl font-bold text-[#0B1527] mb-2">Office Location</h4>
-                    <p className="text-slate-600 text-lg">Suite 405, Legal Center Building,<br/>Rawalpindi, Pakistan</p>
+                    <p className="text-slate-600 text-lg">1st Floor, Office # 108,<br/>Iqbal Shopping Complex,<br/>Abbottabad, Pakistan</p>
                   </div>
                 </div>
               </div>
@@ -447,7 +448,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
                <div className="absolute inset-0 bg-[url('/pattern.svg')] opacity-5"></div>
                <MapPin className="w-20 h-20 opacity-20 mb-6 group-hover:scale-110 group-hover:text-blue-500 transition-all duration-500" />
                <h3 className="text-xl font-bold text-slate-500 mb-2 z-10">Interactive Map</h3>
-               <p className="max-w-xs z-10">Google Maps embed code goes here to show the exact location of the rawalpindi office.</p>
+               <p className="max-w-xs z-10">1st Floor, Office # 108, Iqbal Shopping Complex, Abbottabad</p>
             </div>
           </div>
         </AnimatedSection>

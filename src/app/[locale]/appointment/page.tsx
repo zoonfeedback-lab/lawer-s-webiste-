@@ -2,8 +2,8 @@ import AppointmentForm from './AppointmentForm';
 import { useTranslations } from 'next-intl';
 
 export const metadata = {
-  title: 'Book Appointment | Advocate Muhammad Basit',
-  description: 'Schedule an appointment for SECP registration, FBR tax filing, or corporate legal consultation in Rawalpindi.',
+  title: 'Book Appointment | Abdul Basit & Co',
+  description: 'Schedule an appointment for SECP registration, FBR tax filing, or corporate legal consultation in Abbottabad.',
 };
 
 export default async function AppointmentPage({ params }: { params: Promise<{ locale: string }> }) {

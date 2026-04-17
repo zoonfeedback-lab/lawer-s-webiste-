@@ -9,7 +9,7 @@ import {
 } from 'lucide-react';
 
 export const metadata = {
-  title: 'Portfolio & Case Studies | Advocate Muhammad Basit',
+  title: 'Portfolio & Case Studies | Abdul Basit & Co',
   description: 'View our past success stories in SECP company registration, FBR tax compliance, EOBI, and corporate banking.',
 };
 

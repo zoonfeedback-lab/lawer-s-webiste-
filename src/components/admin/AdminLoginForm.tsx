@@ -46,7 +46,7 @@ export default function AdminLoginForm() {
                   name="email"
                   type="email"
                   required
-                  placeholder="admin@basitlegal.com"
+                  placeholder="admin@abdulbasitco.com"
                   className="w-full h-12 pl-11 pr-4 rounded-xl border border-slate-600 bg-slate-700 text-white placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
                 />
               </div>
@@ -84,7 +84,7 @@ export default function AdminLoginForm() {
         </form>
 
         <p className="text-center text-slate-600 text-xs mt-6">
-          Basit Legal &mdash; Secure Admin Access
+          Abdul Basit & Co &mdash; Secure Admin Access
         </p>
       </div>
     </div>

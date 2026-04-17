@@ -8,8 +8,8 @@ import {
 } from 'lucide-react';
 
 export const metadata = {
-  title: 'About | Advocate Muhammad Basit',
-  description: 'Expert corporate lawyer based in Rawalpindi, Pakistan with extensive experience in business compliance.',
+  title: 'About | Abdul Basit & Co',
+  description: 'Certified Financial & Management Advisors based in Abbottabad, Pakistan. Auditing, Tax, and Corporate Legal Advisory.',
 };
 
 export default async function AboutPage({ params }: { params: Promise<{ locale: string }> }) {
@@ -25,16 +25,19 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
           <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-12 lg:gap-20 items-center justify-between">
             <div className="flex-1 order-2 md:order-1">
               <span className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 text-blue-700 rounded-full text-sm font-bold tracking-widest uppercase mb-6 border border-blue-100">
-                <ShieldCheck className="w-4 h-4" /> Principal Counsel
+                <ShieldCheck className="w-4 h-4" /> CEO & Principal Advisor
               </span>
               <h1 className="text-5xl lg:text-6xl font-bold text-[#0B1527] mb-4 tracking-tight leading-tight">
-                Advocate Muhammad Basit
+                Abdul Basit
               </h1>
-              <p className="text-2xl text-blue-600 font-medium mb-6">
-                High Court Advocate & Corporate Consultant
+              <p className="text-2xl text-blue-600 font-medium mb-2">
+                CEO — Abdul Basit & Co
+              </p>
+              <p className="text-base text-slate-500 font-medium mb-6">
+                MS (A&F), CFMA, CFE, CTP (USA) | Auditor, Tax Practitioner, Corporate Legal Advisor
               </p>
               <p className="text-lg text-slate-600 mb-10 leading-relaxed max-w-2xl">
-                A highly sought-after corporate lawyer based in Rawalpindi, serving as the legal backbone for numerous startups and established enterprises across Pakistan.
+                A highly sought-after certified financial and management advisor based in Abbottabad, serving as the financial backbone for numerous startups and established enterprises across Pakistan.
               </p>
               
               <div className="flex flex-wrap gap-4">
@@ -75,7 +78,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
            
            <div className="space-y-8 text-lg text-slate-700 leading-relaxed columns-1 md:columns-2 gap-12">
               <p>
-                Advocate Muhammad Basit brings over a decade of dedicated expertise in company registrations, aggressive tax planning, and seamless corporate compliance. His proactive approach to legal structuring bridges the gap between regulatory requirements and entrepreneurial vision.
+                Abdul Basit brings over a decade of dedicated expertise in auditing, aggressive tax planning, and seamless corporate compliance. His proactive approach to financial structuring bridges the gap between regulatory requirements and entrepreneurial vision.
               </p>
               <p>
                 Recognized by the Punjab Bar Council, he specializes in exclusively navigating the complex environments of the Securities and Exchange Commission of Pakistan (SECP) and the Federal Board of Revenue (FBR). 
